@@ -1,0 +1,29 @@
+{
+  "name": "angularjs-downgrade",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev":
+      "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "@angular/common": "6.0.7",
+    "@angular/core": "6.0.7",
+    "@angular/platform-browser": "6.0.7",
+    "@angular/upgrade": "6.0.7",
+    "rxjs": "latest"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "keywords": []
+}
